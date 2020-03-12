@@ -1,0 +1,48 @@
+hello world {{title | uppercase | lowercase}}
+
+<app-todo-list></app-todo-list>
+
+<div *ngIf='isLoading'>
+  loading!
+</div>
+
+<p>
+  {{ amount | number:'0.1-1'}}
+</p>
+
+<p>
+  {{ today | date:'yyyy-MM-dd' }}
+</p>
+
+<p>
+  {{ user | json }}
+</p>
+
+<pre>
+  {{ user | json }}
+</pre>
+
+{{todoList}}
+<img
+  [src]='imageUrl'
+  [class.active]='isActvie'
+>
+
+
+<p [style.color]="isActvie ? 'green':'red'">
+  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere officiis nostrum quo? Ex necessitatibus, suscipit, distinctio deserunt temporibus id architecto, doloremque itaque quos ad quia? Necessitatibus eius nihil laboriosam sed.
+</p>
+
+<button (click)="onClickOkButton($event)">
+  ok
+</button>
+
+<!-- <input #email (keyup.enter)="search(email.value)"> -->
+
+<input [(ngModel)]="email">
+
+{{email}}
+
+
+
+
